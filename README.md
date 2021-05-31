@@ -2,9 +2,10 @@
 
 ## Лабараторсика вежба 2
 
+###  Control Flow Graph
 
-![](Code.png)
 ![](Graph.png)
+![](Code.png) 
 
 ### Every branch критериум. 
 
@@ -112,11 +113,11 @@
 
 Тест 6. провруваме дали часто е точно 24, дали минутите и секунди се еднакви на 0. тогаш го добиваме темето 15 поминвајќи на 7.
 
-Тест. 7. Доколкку часот е точно 24 и минутите и секнудните не се 0 тогаш го добиваме темето  
+Тест. 7. Доколкку часот е точно 24, минутите и секнудните не се 0 тогаш го добиваме темето 8.
 
-### Every branch
+### Every path
 
-Бидејќи се работи за патеки ние може да имаме безброј патеки кога во кодот имаме циклус. Па затоа ќе дадам само еден примери на патека, бидејќи е невозможно да ги опишеме сите патеки. 
+Бидејќи се работи за патеки, но при тоа имаме циклус во нашипт год, тогаш бројот на патеки е бесонечен. Па затоа ќе дадам само еден примери за патеки.
 
 ```
 public void test1() {
@@ -131,7 +132,7 @@ public void test1() {
     timesList.add(time1);
     timesList.add(time2);
     result = SILab2.function(timesList);
-	assertEquals(result.get(0).intValue().time.getHours()*3600 + time.getMinutes()*60 + time.getSeconds());
+    assertEquals(result.get(0).intValue().time.getHours()*3600 + time.getMinutes()*60 + time.getSeconds());
     assertEquals(result.get(1).intValue().time.getHours()*3600 + time.getMinutes()*60 + time.getSeconds());
     assertEquals(result.get(2).intValue().time.getHours()*3600 + time.getMinutes()*60 + time.getSeconds());
 
