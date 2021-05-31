@@ -3,8 +3,8 @@
 ## Лабараторсика вежба 2
 
 
-![Code.png]
-![Graph.png]
+![](Code.png)
+![](Graph.png)
 
 ### Every branch критериум. 
 
